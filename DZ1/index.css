@@ -55,10 +55,16 @@ body {
 }
 
 .button {
+    width: 246px;
+    height: 48px;
     background: #7AC100;
     border-radius: 12px;
-    outline: none;
+    border: none;
     transition: 0.2s;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: white;
 }
 
 .button:hover {
@@ -75,4 +81,4 @@ body {
     font-size: 24px;
     line-height: 32px;
 }
-/*some*/
+
