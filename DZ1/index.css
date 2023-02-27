@@ -1,84 +1,394 @@
 body {
-    font-family: my_font;
-    background: #004980;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-evenly;
+  font-family: my_font;
+  background: #004980;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 @font-face {
-    font-family: "my_font";
-    src: url("stratosskyengweb-black.woff");
-  }
+  font-family: "my_font";
+  src: url("stratosskyengweb-black.woff");
+}
 
 .square {
-    margin-top: 158px;
-    margin-bottom: 158px;
-    background-color: #C2F5FF;
-    width: 480px;
-    height: 459px;
-    border-radius: 12px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+  margin-top: 158px;
+  margin-bottom: 158px;
+  background-color: #c2f5ff;
+  width: 480px;
+  height: 459px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .chose_difficult {
-    color: #004980;
-    font-size: 40px;
-    line-height: 48px;
-    font-weight: 400;
+  color: #004980;
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 400;
 }
 
 .difficult_level {
-    display: flex;
-    gap: 24px;
+  display: flex;
+  gap: 24px;
 }
 
 .difficult_level__number {
-    margin-top: 48px;
-    margin-bottom: 67px;
-    height: 98px;
-    width: 98px;
-    background-color: white;
-    font-size: 64px;
-    font-weight: 400;
-    line-height: 72px;
-    letter-spacing: 0px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    border-radius: 12px;
-    align-items: center;
-    color: #0080C1;
+  margin-top: 48px;
+  margin-bottom: 67px;
+  height: 98px;
+  width: 98px;
+  background-color: white;
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 72px;
+  letter-spacing: 0px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  border-radius: 12px;
+  align-items: center;
+  color: #0080c1;
 }
 
 .button {
-    width: 246px;
-    height: 48px;
-    background: #7AC100;
-    border-radius: 12px;
-    border: none;
-    transition: 0.2s;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 32px;
-    color: white;
+  width: 246px;
+  height: 48px;
+  background: #7ac100;
+  border-radius: 12px;
+  border: none;
+  transition: 0.2s;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  color: white;
 }
 
 .button:hover {
-    scale: 1.05;
+  scale: 1.05;
 }
 
 .button_start {
-    width: 246px;
-    height: 50px;
-    color: white;
-    border-style: none;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 32px;
+  width: 246px;
+  height: 50px;
+  color: white;
+  border-style: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
 }
 
+.game_header {
+  margin: 52px 0 48px 0;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.time {
+  margin-left: 22px;
+}
+
+.header_button {
+  margin-right: 22px;
+}
+
+.div_cards {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-gap: 15px;
+  margin: 0 32px 55px 32px;
+}
+
+.card {
+  background: url(./src/рубашка.png);
+  width: 95px;
+  height: 133px;
+  border-radius: 6px;
+}
+
+.time {
+  width: 155px;
+  height: 72px;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 72px;
+  color: #FFFFFF;
+}
+
+.min_sek {
+  width: 26px;
+  height: 32px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: #FFFFFF;
+}
+
+.div_div_time {
+  display: flex;
+}
+
+.div_time {
+  margin-left: 22px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.card1 {
+  background: url(./src/туз\ пики.png);
+  width: 95px;
+  height: 133px;
+  border-radius: 6px;
+}
+
+.card2 {
+  background: url(./src/король\ пики.png);
+  width: 95px;
+  height: 133px;
+  border-radius: 6px;
+}
+
+.card3 {
+  background: url(./src/дама\ пики.png);
+  width: 95px;
+  height: 133px;
+  border-radius: 6px;
+}
+
+.card4 {
+  background: url(./src/валет\ пики.png);
+  width: 95px;
+  height: 133px;
+  border-radius: 6px;
+}
+
+.card5 {
+  background: url(./src/10\ пики.png);
+  width: 95px;
+  height: 133px;
+  border-radius: 6px;
+}
+
+.card6 {
+  background: url(./src/9\ пики.png);
+  width: 95px;
+  height: 133px;
+  border-radius: 6px;
+}
+
+.card7 {
+  background: url(./src/8\ пики.png);
+  width: 95px;
+  height: 133px;
+  border-radius: 6px;
+}
+
+.card8 {
+  background: url(./src/7\ пики.png);
+  width: 95px;
+  height: 133px;
+  border-radius: 6px;
+}
+
+.card9 {
+  background: url(./src/6\ пики.png);
+  width: 95px;
+  height: 133px;
+  border-radius: 6px;
+}
+
+.card10 {
+  background: url(./src/туз\ черви.png);
+  width: 95px;
+  height: 133px;
+  border-radius: 6px;
+}
+
+.card11 {
+  background: url(./src/король\ черви.png);
+  width: 95px;
+  height: 133px;
+  border-radius: 6px;
+}
+
+.card12 {
+  background: url(./src/дама\ черви.png);
+  width: 95px;
+  height: 133px;
+  border-radius: 6px;
+}
+
+.card13 {
+  background: url(./src/валет\ черви.png);
+  width: 95px;
+  height: 133px;
+  border-radius: 6px;
+}
+
+.card14 {
+  background: url(./src/10\ черви.png);
+  width: 95px;
+  height: 133px;
+  border-radius: 6px;
+}
+
+.card15 {
+  background: url(./src/9\ черви.png);
+  width: 95px;
+  height: 133px;
+  border-radius: 6px;
+}
+
+.card16 {
+  background: url(./src/8\ черви.png);
+  width: 95px;
+  height: 133px;
+  border-radius: 6px;
+}
+
+.card17 {
+  background: url(./src/7\ черви.png);
+  width: 95px;
+  height: 133px;
+  border-radius: 6px;
+}
+
+.card18 {
+  background: url(./src/6\ черви.png);
+  width: 95px;
+  height: 133px;
+  border-radius: 6px;
+}
+
+.card19 {
+  background: url(./src/туз\ бубны.png);
+  width: 95px;
+  height: 133px;
+  border-radius: 6px;
+}
+
+.card20 {
+  background: url(./src/король\ бубны.png);
+  width: 95px;
+  height: 133px;
+  border-radius: 6px;
+}
+
+.card21 {
+  background: url(./src/король\ бубны.png);
+  width: 95px;
+  height: 133px;
+  border-radius: 6px;
+}
+
+.card22 {
+  background: url(./src/валет\ бубны.png);
+  width: 95px;
+  height: 133px;
+  border-radius: 6px;
+}
+
+.card23 {
+  background: url(./src/10\ бубны.png);
+  width: 95px;
+  height: 133px;
+  border-radius: 6px;
+}
+
+.card24 {
+  background: url(./src/9\ бубны.png);
+  width: 95px;
+  height: 133px;
+  border-radius: 6px;
+}
+
+.card25 {
+  background: url(./src/8\ бубны.png);
+  width: 95px;
+  height: 133px;
+  border-radius: 6px;
+}
+
+.card26 {
+  background: url(./src/7\ бубны.png);
+  width: 95px;
+  height: 133px;
+  border-radius: 6px;
+}
+
+.card27 {
+  background: url(./src/6\ бубны.png);
+  width: 95px;
+  height: 133px;
+  border-radius: 6px;
+}
+
+.card28 {
+  background: url(./src/туз\ крести.png);
+  width: 95px;
+  height: 133px;
+  border-radius: 6px;
+}
+
+.card29 {
+  background: url(./src/король\ крести.png);
+  width: 95px;
+  height: 133px;
+  border-radius: 6px;
+}
+
+.card30 {
+  background: url(./src/дама\ крести.png);
+  width: 95px;
+  height: 133px;
+  border-radius: 6px;
+}
+
+.card31 {
+  background: url(./src/валет\ крести.png);
+  width: 95px;
+  height: 133px;
+  border-radius: 6px;
+}
+
+.card32 {
+  background: url(./src/10\ крести.png);
+  width: 95px;
+  height: 133px;
+  border-radius: 6px;
+}
+
+.card33 {
+  background: url(./src/9\ крести.png);
+  width: 95px;
+  height: 133px;
+  border-radius: 6px;
+}
+
+.card34 {
+  background: url(./src/8\ крести.png);
+  width: 95px;
+  height: 133px;
+  border-radius: 6px;
+}
+
+.card35 {
+  background: url(./src/7\ крести.png);
+  width: 95px;
+  height: 133px;
+  border-radius: 6px;
+}
+
+.card36 {
+  background: url(./src/6\ крести.png);
+  width: 95px;
+  height: 133px;
+  border-radius: 6px;
+}
