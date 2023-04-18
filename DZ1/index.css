@@ -60,6 +60,7 @@ body {
   border-radius: 12px;
   align-items: center;
   color: #0080c1;
+  transition: 0.2s;
 }
 
 .button {

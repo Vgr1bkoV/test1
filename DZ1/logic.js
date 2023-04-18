@@ -9,7 +9,7 @@ function alerts(firstCard, secondCard, targetFirst, targetSecond) {
 	}
 }
 
-function compare() {
+export function compare() {
 	let hasFlipperedCard = false;
 	let firstCard , secondCard, targetFirst, targetSecond;
 	const temp = document.querySelectorAll('.memory-card');
@@ -41,5 +41,3 @@ function compare() {
 		card.addEventListener('click', flipCard);
 	})
 }
-
-compare();

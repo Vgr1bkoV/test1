@@ -1,4 +1,4 @@
-function randomCards(count){ // функция возвращает count * 2 чисел от 1 до 36 склеенных с "card" 
+export function randomCards(count){ // функция возвращает count * 2 чисел от 1 до 36 склеенных с "card" 
     const allCards = 
     [
         1, 2, 3, 4, 5, 8, 7, 6, 7, 8, 9, 11, 12, 13, 14, 15, 18, 17, 16, 17, 18, 19, 20, 31, 32, 33, 34, 35, 38, 37, 36
@@ -39,5 +39,5 @@ cards.forEach((num) => {
 
 return(cardStrings);
 }
-randomCards();
+
 

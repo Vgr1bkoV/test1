@@ -27,6 +27,7 @@ module.exports = {
     filename: "bundle.js",
   },
   plugins: [
+    new MiniCssExtractPlugin(),
     new CopyPlugin({
       patterns: [{ from: "static", to: "static" }],
     }),

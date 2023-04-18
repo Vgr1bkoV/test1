@@ -1,3 +1,7 @@
+import './index.css';
+import { compare } from "./logic";
+import { randomCards } from "./random_card";
+
 window.application = {
   renderBlock: function (name, container) {
     window.application[name](container);
@@ -60,6 +64,10 @@ function renderMainScreenOpenCards1(container) {
   const button = document.createElement("button");
   button.classList.add("button", "header_button");
   button.textContent = "Начать заново";
+  button.addEventListener('click', () => {
+    container.innerHTML = "";
+    renderMainScreenOpenCards1(container);
+  })
 
   const divCards = document.createElement("div");
   divCards.classList.add("div_cards");
@@ -97,6 +105,11 @@ function renderMainScreenOpenCards2(container) {
   const button = document.createElement("button");
   button.classList.add("button", "header_button");
   button.textContent = "Начать заново";
+  button.addEventListener('click', () => {
+    container.innerHTML = "";
+    renderMainScreenOpenCards2(container);
+  })
+  
 
   const divCards = document.createElement("div");
   divCards.classList.add("div_cards");
@@ -134,6 +147,10 @@ function renderMainScreenOpenCards3(container) {
   const button = document.createElement("button");
   button.classList.add("button", "header_button");
   button.textContent = "Начать заново";
+  button.addEventListener('click', () => {
+    container.innerHTML = "";
+    renderMainScreenOpenCards3(container);
+  })
 
   const divCards = document.createElement("div");
   divCards.classList.add("div_cards");
