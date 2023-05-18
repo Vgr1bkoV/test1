@@ -100,10 +100,6 @@ body {
   justify-content: space-between;
 }
 
-.time {
-  margin-left: 22px;
-}
-
 .header_button {
   margin-right: 22px;
 }
@@ -112,6 +108,7 @@ body {
   display: flex;
   gap: 15px;
   flex-wrap: wrap;
+  padding: 0 50px 0 50px;
 }
 
 .memory-card {
@@ -120,12 +117,14 @@ body {
 }
 
 .time {
+  display: flex;
   width: 155px;
   height: 72px;
   font-weight: 400;
   font-size: 64px;
   line-height: 72px;
   color: #ffffff;
+  justify-content: center;
 }
 
 .min_sek {
@@ -143,8 +142,9 @@ body {
 
 .div_time {
   margin-left: 22px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .memory-card {
@@ -529,4 +529,97 @@ body {
   position:absolute;
   backface-visibility: hidden;
   transform: rotateY(180deg);
+}
+
+.tmp {
+  width: 246px;
+  height: 48px;
+  background: #7ac100;
+  border-radius: 12px;
+  border: none;
+  transition: 0.2s;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  color: white;
+}
+
+.tmp-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 480px;
+  height: 459px;
+  background: #C2F5FF;
+  border-radius: 12px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-bottom: 50px;
+  z-index: 1000; 
+}
+
+.wictory-png {
+  margin-top: 30px;
+  width: 96px;
+  height: 96px;
+  background: url(./src/celebration.svg);
+}
+
+.dead-png {
+  margin-top: 30px;
+  width: 96px;
+  height: 96px;
+  background: url(./src/dead.svg);
+}
+
+.res-title {
+  font-family: 'StratosSkyeng';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
+  color: #004980;
+}
+
+.spent-time {
+  height: 32px;
+  font-family: 'StratosSkyeng';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  padding: 0;
+  margin: 0;
+  line-height: 32px;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  color: #000000;
+}
+
+.res-time {
+  display: flex;
+  width: 155px;
+  height: 72px;
+  font-family: 'StratosSkyeng';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  padding: 0;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  line-height: 72px;
+  color: #000000;
+  align-content: center;
+  justify-content: center;
+}
+
+.res-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #004980;;
+  opacity: 0.5;;
+  z-index: 100; 
 }
