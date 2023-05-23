@@ -24,14 +24,6 @@ body {
   flex-direction: column;
 }
 
-.disabled {
-  pointer-events: none;
-}
-
-.green {
-  background-color: #7ac100;
-}
-
 .chose_difficult {
   color: #004980;
   font-size: 40px;
@@ -108,14 +100,17 @@ body {
 }
 
 .div_cards {
-  display: flex;
-  gap: 15px;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-gap: 15px;
+  margin: 0 32px 55px 32px;
 }
 
-.memory-card {
+.card {
+  background: url(./src/рубашка.png);
   width: 95px;
   height: 133px;
+  border-radius: 6px;
 }
 
 .time {
@@ -124,7 +119,7 @@ body {
   font-weight: 400;
   font-size: 64px;
   line-height: 72px;
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 .min_sek {
@@ -133,7 +128,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 32px;
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 .div_div_time {
@@ -146,38 +141,11 @@ body {
   grid-template-columns: repeat(2, 1fr);
 }
 
-.memory-card {
-  position: relative;
-  transform-style: preserve-3d;
-}
-
-.memory-card.flip {
-  transform: rotateY(180deg);
-}
-
-.card {
-  background: url(./src/рубашка.png);
-  width: 95px;
-  height: 133px;
-  border-radius: 6px;
-  position:absolute;
-  backface-visibility: hidden;
-  transition: 0.2s;
-}
-
-.card:active {
-  transform: scale(0.88);
-
-}
-
 .card1 {
   background: url(./src/туз\ пики.png);
   width: 95px;
   height: 133px;
   border-radius: 6px;
-  position:absolute;
-  backface-visibility: hidden;
-  transform: rotateY(180deg);
 }
 
 .card2 {
@@ -185,9 +153,6 @@ body {
   width: 95px;
   height: 133px;
   border-radius: 6px;
-  position: absolute;
-  backface-visibility: hidden;
-  transform: rotateY(180deg);
 }
 
 .card3 {
@@ -195,9 +160,6 @@ body {
   width: 95px;
   height: 133px;
   border-radius: 6px;
-  position: absolute;
-  backface-visibility: hidden;
-  transform: rotateY(180deg);
 }
 
 .card4 {
@@ -205,9 +167,6 @@ body {
   width: 95px;
   height: 133px;
   border-radius: 6px;
-  position:absolute;
-  backface-visibility: hidden;
-  transform: rotateY(180deg);
 }
 
 .card5 {
@@ -215,9 +174,6 @@ body {
   width: 95px;
   height: 133px;
   border-radius: 6px;
-  position:absolute;
-  backface-visibility: hidden;
-  transform: rotateY(180deg);
 }
 
 .card6 {
@@ -225,9 +181,6 @@ body {
   width: 95px;
   height: 133px;
   border-radius: 6px;
-  position:absolute;
-  backface-visibility: hidden;
-  transform: rotateY(180deg);
 }
 
 .card7 {
@@ -235,9 +188,6 @@ body {
   width: 95px;
   height: 133px;
   border-radius: 6px;
-  position:absolute;
-  backface-visibility: hidden;
-  transform: rotateY(180deg);
 }
 
 .card8 {
@@ -245,9 +195,6 @@ body {
   width: 95px;
   height: 133px;
   border-radius: 6px;
-  position:absolute;
-  backface-visibility: hidden;
-  transform: rotateY(180deg);
 }
 
 .card9 {
@@ -255,9 +202,6 @@ body {
   width: 95px;
   height: 133px;
   border-radius: 6px;
-  position:absolute;
-  backface-visibility: hidden;
-  transform: rotateY(180deg);
 }
 
 .card10 {
@@ -265,9 +209,6 @@ body {
   width: 95px;
   height: 133px;
   border-radius: 6px;
-  backface-visibility: hidden;
-  transform: rotateY(180deg);
-  position:absolute;
 }
 
 .card11 {
@@ -275,9 +216,6 @@ body {
   width: 95px;
   height: 133px;
   border-radius: 6px;
-  position:absolute;
-  backface-visibility: hidden;
-  transform: rotateY(180deg);
 }
 
 .card12 {
@@ -285,9 +223,6 @@ body {
   width: 95px;
   height: 133px;
   border-radius: 6px;
-  position: absolute;
-  backface-visibility: hidden;
-  transform: rotateY(180deg);
 }
 
 .card13 {
@@ -295,9 +230,6 @@ body {
   width: 95px;
   height: 133px;
   border-radius: 6px;
-  position: absolute;
-  backface-visibility: hidden;
-  transform: rotateY(180deg);
 }
 
 .card14 {
@@ -305,9 +237,6 @@ body {
   width: 95px;
   height: 133px;
   border-radius: 6px;
-  position:absolute;
-  backface-visibility: hidden;
-  transform: rotateY(180deg);
 }
 
 .card15 {
@@ -315,9 +244,6 @@ body {
   width: 95px;
   height: 133px;
   border-radius: 6px;
-  position:absolute;
-  backface-visibility: hidden;
-  transform: rotateY(180deg);
 }
 
 .card16 {
@@ -325,9 +251,6 @@ body {
   width: 95px;
   height: 133px;
   border-radius: 6px;
-  position:absolute;
-  backface-visibility: hidden;
-  transform: rotateY(180deg);
 }
 
 .card17 {
@@ -335,9 +258,6 @@ body {
   width: 95px;
   height: 133px;
   border-radius: 6px;
-  position:absolute;
-  backface-visibility: hidden;
-  transform: rotateY(180deg);
 }
 
 .card18 {
@@ -345,9 +265,6 @@ body {
   width: 95px;
   height: 133px;
   border-radius: 6px;
-  position:absolute;
-  backface-visibility: hidden;
-  transform: rotateY(180deg);
 }
 
 .card19 {
@@ -355,9 +272,6 @@ body {
   width: 95px;
   height: 133px;
   border-radius: 6px;
-  position:absolute;
-  backface-visibility: hidden;
-  transform: rotateY(180deg);
 }
 
 .card20 {
@@ -365,9 +279,6 @@ body {
   width: 95px;
   height: 133px;
   border-radius: 6px;
-  position:absolute;
-  backface-visibility: hidden;
-  transform: rotateY(180deg);
 }
 
 .card21 {
@@ -375,9 +286,6 @@ body {
   width: 95px;
   height: 133px;
   border-radius: 6px;
-  position:absolute;
-  backface-visibility: hidden;
-  transform: rotateY(180deg);
 }
 
 .card22 {
@@ -385,9 +293,6 @@ body {
   width: 95px;
   height: 133px;
   border-radius: 6px;
-  position:absolute;
-  backface-visibility: hidden;
-  transform: rotateY(180deg);
 }
 
 .card23 {
@@ -395,9 +300,6 @@ body {
   width: 95px;
   height: 133px;
   border-radius: 6px;
-  position:absolute;
-  backface-visibility: hidden;
-  transform: rotateY(180deg);
 }
 
 .card24 {
@@ -405,9 +307,6 @@ body {
   width: 95px;
   height: 133px;
   border-radius: 6px;
-  position:absolute;
-  backface-visibility: hidden;
-  transform: rotateY(180deg);
 }
 
 .card25 {
@@ -415,9 +314,6 @@ body {
   width: 95px;
   height: 133px;
   border-radius: 6px;
-  position:absolute;
-  backface-visibility: hidden;
-  transform: rotateY(180deg);
 }
 
 .card26 {
@@ -425,9 +321,6 @@ body {
   width: 95px;
   height: 133px;
   border-radius: 6px;
-  position:absolute;
-  backface-visibility: hidden;
-  transform: rotateY(180deg);
 }
 
 .card27 {
@@ -435,9 +328,6 @@ body {
   width: 95px;
   height: 133px;
   border-radius: 6px;
-  position:absolute;
-  backface-visibility: hidden;
-  transform: rotateY(180deg);
 }
 
 .card28 {
@@ -445,9 +335,6 @@ body {
   width: 95px;
   height: 133px;
   border-radius: 6px;
-  position:absolute;
-  backface-visibility: hidden;
-  transform: rotateY(180deg);
 }
 
 .card29 {
@@ -455,9 +342,6 @@ body {
   width: 95px;
   height: 133px;
   border-radius: 6px;
-  position:absolute;
-  backface-visibility: hidden;
-  transform: rotateY(180deg);
 }
 
 .card30 {
@@ -465,9 +349,6 @@ body {
   width: 95px;
   height: 133px;
   border-radius: 6px;
-  position:absolute;
-  backface-visibility: hidden;
-  transform: rotateY(180deg);
 }
 
 .card31 {
@@ -475,9 +356,6 @@ body {
   width: 95px;
   height: 133px;
   border-radius: 6px;
-  position:absolute;
-  backface-visibility: hidden;
-  transform: rotateY(180deg);
 }
 
 .card32 {
@@ -485,9 +363,6 @@ body {
   width: 95px;
   height: 133px;
   border-radius: 6px;
-  position:absolute;
-  backface-visibility: hidden;
-  transform: rotateY(180deg);
 }
 
 .card33 {
@@ -495,9 +370,6 @@ body {
   width: 95px;
   height: 133px;
   border-radius: 6px;
-  backface-visibility: hidden;
-  position:absolute;
-  transform: rotateY(180deg);
 }
 
 .card34 {
@@ -505,9 +377,6 @@ body {
   width: 95px;
   height: 133px;
   border-radius: 6px;
-  position:absolute;
-  backface-visibility: hidden;
-  transform: rotateY(180deg);
 }
 
 .card35 {
@@ -515,9 +384,6 @@ body {
   width: 95px;
   height: 133px;
   border-radius: 6px;
-  position:absolute;
-  backface-visibility: hidden;
-  transform: rotateY(180deg);
 }
 
 .card36 {
@@ -525,7 +391,4 @@ body {
   width: 95px;
   height: 133px;
   border-radius: 6px;
-  position:absolute;
-  backface-visibility: hidden;
-  transform: rotateY(180deg);
 }
